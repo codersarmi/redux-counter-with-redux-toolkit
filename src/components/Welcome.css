@@ -1,0 +1,18 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20%;
+  transition-duration: 3s;
+}
+.welcome button {
+  background-color: cornflowerblue;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+}

@@ -1,11 +1,11 @@
 import "./Counter.css";
 import { useSelector, useDispatch } from "react-redux";
-import { counterAction } from "../Store/index";
+import { counterAction } from "../Store/CounterReducer";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
-  const isShow = useSelector((state) => state.isShow);
+  const counter = useSelector((state) => state.counter.counter);
+  const isShow = useSelector((state) => state.counter.isShow);
   const increaseHlandler = () => {
     dispatch(counterAction.increase());
   };
